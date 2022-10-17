@@ -4,6 +4,8 @@ layout: home
 ---
 
 
+Hello World
+
 This is an offically-supported, *bare-minimum* template to deploy Just the Docs to GitHub Pages. More specifically, it:
 
 - uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem (pinned to the latest stable)
