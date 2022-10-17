@@ -1,6 +1,6 @@
 ---
 layout: default
-title: PowerShell
+title: PowerShell Script
 nav_order: 9
 has_children: true
 permalink: /docs/powershell
