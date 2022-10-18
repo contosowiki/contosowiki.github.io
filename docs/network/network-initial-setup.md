@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Network device initial setup
-parent: network
+parent: Network
 nav_order: 1
 ---
 
