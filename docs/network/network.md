@@ -14,11 +14,6 @@ Network is the basis of the whole IT infrastructure. We can not imagine the situ
 
 IP Addresses reserved for use on private networks
 
-{% include alert.html type="info" title="Class A" content="10.0.0.0 to 10.255.255.255" %}
-
-{% include alert.html type="primary" title="Class B" content="172.16.0.0 to 172.31.255.255" %}
-
-{% include alert.html type="secondary" title="Class C" content="192.168.0.0 to 192.168.255.255" %}
 
 ### 1.1 Choosing private IPv4 address
 
@@ -28,7 +23,7 @@ IP Addresses reserved for use on private networks
 
 ### 1.2 Example of a company with three Offices
 
-```bash
+```yaml
 Beijing Office 10.10.0.0/255.255.0.0
 Shanghai Office 10.20.0.0/255.255.0.0
 Shenzhen Office 10.30.0.0/255.255.0.0
@@ -36,7 +31,7 @@ Shenzhen Office 10.30.0.0/255.255.0.0
 
 ### 1.3 Example of Beijing office
 
-```bash
+```yaml
 Windows Server 10.10.10.0/255.255.255.0 (Available IP address 10.10.10.1 - 10.10.10.254)
 Linux Server 10.10.20.0/255.255.254.0 (Available IP address 10.10.20.1 - 10.10.21.254)
 ```
