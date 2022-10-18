@@ -4,11 +4,11 @@ theme: "just-the-docs"
 
 url: 'https://contosowiki.github.io'
 
-aux_links:
-  "Template Repository": "https://github.com/just-the-docs/just-the-docs-template"
+# aux_links:
+#  "Template Repository": "https://github.com/just-the-docs/just-the-docs-template"
 
 # Back to top link
 back_to_top: true
 back_to_top_text: "Back to top"
 
-footer_content: "Copyright &copy; 2022 Contoso Wiki. Distributed by an <a href=\"https://github.com/just-the-docs/just-the-docs/tree/main/LICENSE.txt\">MIT license.</a>"
+footer_content: "Copyright &copy; 2022 Contoso Wiki."
