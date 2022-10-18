@@ -22,6 +22,11 @@ Class C: 192.168.0.0 to 192.168.255.255
 ## Table of contents
 {: .no_toc .text-delta }
 
+1. TOC
+{:toc}
+
+---
+
 ## Choosing private IPv4 address
 
 We need to reserve enough IP address for all devices (Desktop, Laptop, Mobile, etc), Class A may be good choose. 
