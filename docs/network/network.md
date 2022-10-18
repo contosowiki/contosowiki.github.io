@@ -7,6 +7,7 @@ permalink: /docs/network
 ---
 
 # Network
+{: .no_toc }
 
 Network is the basis of the whole IT infrastructure. We can not imagine the situation without network.
 
