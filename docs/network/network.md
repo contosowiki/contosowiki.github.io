@@ -11,6 +11,7 @@ permalink: /docs/network
 Network is the basis of the whole IT infrastructure. We can not imagine the situation without network.
 
 IP Addresses reserved for use on private networks
+
 {: .highlight }
 10.0.0.0 to 10.255.255.255
 172.16.0.0 to 172.31.255.255
@@ -19,9 +20,10 @@ IP Addresses reserved for use on private networks
 ## 1.1 Choosing private IPv4 address
 
 {: .highlight }
-1. We need to reserve enough IP address for all devices (Desktop, Laptop, Mobile, etc), Class A may be good choose. 
+We need to reserve enough IP address for all devices (Desktop, Laptop, Mobile, etc), Class A may be good choose. 
+
 {: .highlight }
-2. Pay attention to potential IP confiction in your environment (Docker may use IP address of Class B, etc).
+Pay attention to potential IP confiction in your environment (Docker may use IP address of Class B, etc).
 
 ## 1.2 Example of a company with three Offices
 
