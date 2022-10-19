@@ -26,7 +26,7 @@ Pay attention to potential IP confiction in your environment (Docker may use IP 
 
 ## Example of a company with three Offices
 
-```yaml
+```js
 Beijing Office 10.10.0.0/255.255.0.0
 Shanghai Office 10.20.0.0/255.255.0.0
 Shenzhen Office 10.30.0.0/255.255.0.0
@@ -34,7 +34,7 @@ Shenzhen Office 10.30.0.0/255.255.0.0
 
 ## Example of Beijing office
 
-```yaml
+```js
 Windows Server 10.10.10.0/255.255.255.0 (Available IP address 10.10.10.1 - 10.10.10.254)
 Linux Server 10.10.20.0/255.255.254.0 (Available IP address 10.10.20.1 - 10.10.21.254)
 ...
