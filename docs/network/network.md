@@ -8,9 +8,9 @@ permalink: /docs/network
 
 # Network
 
-Network is the basis of the whole IT infrastructure. We can not imagine the situation without network.
+Network is the basis of the whole IT infrastructure. 
 
-IP Addresses reserved for use on private networks
+IP Addresses reserved for use on private networks:
 
 - **Class A:** 10.0.0.0 to 10.255.255.255
 
