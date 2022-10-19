@@ -1,6 +1,7 @@
 title: Contoso Wiki
 description: An open project
 theme: "just-the-docs"
+color_scheme: contoso
 
 url: 'https://contosowiki.github.io'
 
