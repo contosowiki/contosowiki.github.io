@@ -7,7 +7,7 @@ nav_order: 1
 
 # About Zabbix
 
-Zabbix is 100% Enterprise-ready
+Zabbix is 100% Enterprise-ready:
 
 - Unlimited scalabiliy
 - Distributed monitoring
