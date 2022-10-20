@@ -4,15 +4,16 @@ title: Home
 nav_order: 1
 ---
 
+IT Infrastructure Practice focusing on Small and Medium-sized Enterprise. 
 
-Hello World
+Contoso Wiki is a fictional company.
 
-This is an offically-supported, *bare-minimum* template to deploy Just the Docs to GitHub Pages. More specifically, it:
+```powershell
+After all, life is never so jolly or so miserable as people seem to think.
+― Guy de Maupassant, Une vie
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem (pinned to the latest stable)
-- uses the new [GitHub Pages / Actions workflow](https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/) to deploy to pages
+生活可能不像你想象的那么好，但是也不会像你想象的那么糟。
+― 莫泊桑，《一生》
 
-Other than that, you're free to customize this template however you'd like! [Browse our documentation](https://just-the-docs.github.io/just-the-docs/) to learn more about how to use the theme!
-
-To get started, just click ["use this template"](https://github.com/just-the-docs/just-the-docs-template/generate)!
-
+人的脆弱和坚强都超乎了自己的想象，有时候可能脆弱的一句话就泪流满面，有时候你发现自己咬着牙已经走过了很长的路。人生当中总是有你能力所不及的范围，但是如果在你能力所及的范畴内，你尽到了自己全部的努力，那你还有什么可以遗憾呢。 
+```
