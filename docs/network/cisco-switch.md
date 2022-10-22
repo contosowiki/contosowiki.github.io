@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Cisco Switching
+title: Cisco Switch
 parent: Network
 nav_order: 1
 ---

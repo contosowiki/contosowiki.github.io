@@ -1,8 +1,8 @@
 ---
 layout: default
-title: H3C Switching
+title: H3C Switch
 parent: Network
-nav_order: 3
+nav_order: 11
 ---
 
 # H3C Switching
