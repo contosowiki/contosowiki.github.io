@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Initial Setup
+title: H3C Switching
 parent: Network
-nav_order: 1
+nav_order: 3
 ---
 
-# Network device initial setup
+# H3C Switching
 {: .no_toc }
 
 ## Table of contents
