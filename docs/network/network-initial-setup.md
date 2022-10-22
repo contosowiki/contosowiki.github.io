@@ -18,7 +18,6 @@ nav_order: 1
 
 ## Putty 
 Switch <-> Console cable <-> Laptop（Putty）
-[[File:Putty.png|thumb|alt=|none]]
 
 ## General 
 ```shell
