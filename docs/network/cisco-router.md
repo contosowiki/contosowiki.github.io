@@ -17,25 +17,29 @@ nav_order: 2
 ---
 
 ## Basic setup
+ ```js
 show ip route summary
+```
 
 ## Administrative Distance
+<div class="code-example" markdown="1">
 | Routing Protocol        | AD          |
 |:-------------|:------------------|
 | Directly connected interface           | 0 |
 | Static route | 1   |
 | OSPF           | 110      |
 | RIP           | 120 |
+</div>
 
 ## Static Route
-```shell
+ ```js
 ip route 172.16.0.0 255.255.0.0 e0/0 192.168.12.2
 ip route 0.0.0.0 0.0.0.0 e0/0 192.168.12.2
 ip route 0.0.0.0 0.0.0.0 e0/1 192.168.13.3 10
 ```
 
 ## OSPF (Open Shortest Path First)
-```shell
+ ```js
 router ospf 1 // router ospf process-id
 interface fastEthernet 0/1
 ip ospf 1 area 0
@@ -59,7 +63,7 @@ Cost = reference-bandwidth / bandwidth
 ```
 
 ## NAT
-```shell
+ ```js
 interface Ethernet0
 ip address 192.168.1.1 255.255.255.0
 ip nat inside
@@ -71,14 +75,14 @@ show ip nat translations
 ```
 
 ## ACL
-```shell
-FTP (Active Mode)
+ ```js
+# FTP (Active Mode)
 access-list 102 permit tcp any host 192.168.1.100 eq ftp
 access-list 102 permit tcp any host 192.168.1.100 eq ftp-data established
-FTP (Passive Mode)
+# FTP (Passive Mode)
 access-list 102 permit tcp any host 192.168.1.100 eq ftp
 access-list 102 permit tcp any host 192.168.1.100 gt 1024
-SMTP
+# SMTP
 access-list 102 permit tcp any host 192.168.1.100 eq smtp
-https://www.cisco.com/c/zh_cn/support/docs/ip/access-lists/26448-ACLsamples.html
+# https://www.cisco.com/c/zh_cn/support/docs/ip/access-lists/26448-ACLsamples.html
 ```

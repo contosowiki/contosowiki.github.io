@@ -17,7 +17,7 @@ nav_order: 1
 ---
 
 ## Basic Setup and query
-```shell
+ ```js
 enable
 configure terminal
 hostname CoreSwitch01
@@ -36,7 +36,7 @@ show int f0/0 | include rate
 ```
 
 ## SSH
-```shell
+ ```js
 ip domain-name alphabook.cn
 crypto key generate rsa
 username cisco privilege 15 secret cisco
@@ -46,7 +46,7 @@ transport input ssh
 ```
 
 ## Vlan
-```shell
+ ```js
 vlan 1 (management vlan by default)
 Create vlan (Manually on all switches)
 vlan 10
@@ -58,7 +58,7 @@ no shutdown
 ```
 
 ## VLAN ACL
-```shell
+ ```js
 ip access-list extended local-17
 permit ip host 192.168.99.17 192.168.99.0 0.0.0.255
 exit
@@ -72,7 +72,7 @@ vlan filter block-17 vlan-list 99
 ```
 
 ## VTP Vlan Trunk Protocol (risk)
-```shell
+ ```js
 configure trunk first
 mode: server / client / transparent
 vtp domain alphabook
@@ -83,7 +83,7 @@ show vtp status
 ```
 
 ## Spanning-tree
-```shell
+ ```js
 PVST+ (Cisco)
 RPVST Rapid PVST (Cisco)
 MST Multiple Spanning Tree
@@ -98,7 +98,7 @@ spanning-tree mst 2 root secondary
 ```
 
 ## Switchport Mode Access
-```shell
+ ```js
 interface fastEthernet 0/1
 description 1F-P001
 switchport mode access
@@ -110,7 +110,7 @@ switchport access vlan 20
 ```
 
 ## Switchport Mode Access (Advanced Security)
-```shell
+ ```js
 switchport port-security mac-address 0000.1111.2222
 switchport port-security maximum 1
 switchport port-security violation shutdown
@@ -120,7 +120,7 @@ show errdisable recovery
 ```
 
 ## Switchport Mode Trunk
-```shell
+ ```js
 interface range gigabitEthernet 0/1 - 2
 switchport trunk encapsulation dot1q
 switchport mode trunk
@@ -133,7 +133,7 @@ show interface gigabitEthernet 0/1 trunk
 ```
 
 ## EthernetChannel
-```shell
+ ```js
 interface range gigabitEthernet 0/1 - 2
 switchport trunk encapsulation dot1q
 switchport mode trunk
@@ -145,7 +145,7 @@ show etherchannel load-balance
 ```
 
 ## Switchport mirror
-```shell
+ ```js
 monitor session 1 source interface fastEthernet 0/1
 monitor session 1 destination interface fastEthernet 0/1
 show monitor 1
@@ -153,7 +153,7 @@ no monitor session 1
 ```
 
 ## StackWise
-```shell
+ ```js
 Cisco StackWise technology provides an innovative new method for collectively utilizing the capabilities of a stack of switches. Individual switches intelligently join to create a single switching unit with a 32-Gbps switching stack interconnect. Configuration and routing information is shared by every switch in the stack, creating a single switching unit. Switches can be added to and deleted from a working stack without affecting performance.
 show switch
 show switch stack-ports
@@ -162,7 +162,7 @@ https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-series-
 ```
 
 ## Virtual Port Channel and HSRP
-```shell
+ ```js
 It eliminates the need to run Spanning Tree Protocol (STP).
 It provides a loop-free topology.
 Because we are no longer running STP, every link is leveraged.
@@ -171,7 +171,7 @@ It allows downstream devices to be connected to two separate devices, thus provi
 ```
 
 ## VRRP Virtual Router Redundancy Protocol
-```shell
+ ```js
 interface vlan 10
 vrrp 10 ip 192.168.10.1
 vrrp priority 105 (100 by default)
@@ -179,7 +179,7 @@ show vrrp brief
 ```
 
 ## 802.1x Authentication
-```shell
+ ```js
 configure terminal
 aaa new-model
 aaa authentication dot1x default group radius
@@ -195,7 +195,7 @@ show dot1x
 ```
 
 ## DHCP
-```shell
+ ```js
 UDP (Client 67, Server 68) DHCP Discover / DHCP Offer / DHCP Request / DHCP ACK
 service dhcp
 no ip dhcp conflict logging
@@ -210,27 +210,27 @@ ip helper-address 192.168.10.1
 ```
 
 ## POE
-```shell
+ ```js
 power inline auto max 6000
 power inline never
 show power inline
 ```
 
 ## Voice VLAN
-```shell
+ ```js
 switchport voice vlan 120
 show interface fastEthernet 0/1
 Storm Control
 ```
 
 ## Backup and Restore
-```shell
+ ```js
 copy running-config tftp:
 copy tftp: running-config
 ```
 
 ## Reset Configuration
-```shell
+ ```js
 erase startup-config
 dir
 delete flash:vlan.dat
@@ -238,7 +238,7 @@ reload
 ```
 
 ## Reset Password
-```shell
+ ```js
 flash_init
 load_helper
 dir flash:
@@ -251,7 +251,7 @@ write memory
 ```
 
 ## Error Disable
-```shell
+ ```js
 errdisable detect cause ?
 errdisable recovery cause ?
 errdisable recovery interval ?
@@ -260,7 +260,7 @@ show errdisable recovery
 ```
 
 ## Trick
-```shell
+ ```js
 service password-encryption
 no ip domain-lookup
 no switchport

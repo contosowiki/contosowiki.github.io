@@ -17,7 +17,7 @@ nav_order: 7
 ---
 
 ## Check the switch port based on IP address
-```shell
+ ```js
 # On core switch
 show arp | include 192.168.200.100
 show mac address-table | include 3a00.031e.bb00
@@ -27,12 +27,12 @@ show mac address-table | include 3a00.031e.bb00
 ```
 
 ## Check IP based on MAC address
-```shell
+ ```js
 show arp | include 0000.0000.0001
 ```
 
 ## Private VLAN Sticky-ARP issue
-```shell
+ ```js
 # global
 no ip sticky-arp
 # interface
@@ -40,7 +40,7 @@ ip sticky-arp ignore
 ```
 
 ## Arp entry does not age out and need clean arp cache manually
-```shell
+ ```js
 Command clean arp-cache may not work
 And need to use command clean ip arp
 Cisco Bug cscsk46195
@@ -51,7 +51,7 @@ show arp 192.168.200.100 detail
 ```
 
 ## Debug DHCP
-```shell
+ ```js
 debug dhcp server events
 show ip dhcp pool VLAN10
 show ip dhcp conflict
@@ -60,13 +60,13 @@ ip dhcp conflict resolution
 ```
 
 ## 10/100/1000M port only work on 100M mode
-```shell
+ ```js
 Cat 5E or higher
 All 4 pairs
 ```
 
 ## Lost package when ping iDRAC IP address
-```shell
+ ```js
 iDRAC may not work properly on 10/100/1000M Auto mode
 Set 100M on switch port manually
 ```
@@ -75,7 +75,7 @@ Set 100M on switch port manually
 https://macvendors.com/
 
 ## Create reservation in DHCP scope on Cisco switch
-```shell
+ ```js
 Get client-id
 show ip dhcp binding
 Add IP reservation
@@ -88,7 +88,7 @@ clear ip dhcp binding 192.168.200.100
 ```
 
 ## Ping
-```shell
+ ```js
 # Example 1
 C:\Users\administrator>ping 192.168.200.10
 Pinging 192.168.200.10 with 32 bytes of data:

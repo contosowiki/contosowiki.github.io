@@ -17,7 +17,7 @@ nav_order: 6
 ---
 
 ## VoiceGW
-```shell
+ ```js
 hostname VoiceGW
 interface fastEthernet 0/0
 ip address 192.168.100.254 255.255.255.0
@@ -45,7 +45,7 @@ button 1:2
 ```
 
 ## VoiceSwitch01
-```shell
+ ```js
 hostname VoiceSwitch01
 interface range fastEthernet 0/1-24
 switchport voice vlan 1
