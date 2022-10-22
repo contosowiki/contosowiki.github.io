@@ -67,7 +67,7 @@ display ntp status
 display clock
 ```
 
-=== VLAN ===
+## VLAN 
 ```shell
 vlan 100
 description Office
@@ -75,7 +75,7 @@ interface vlan-interface 100
 ip address 10.10.100.1 255.255.255.0
 ```
 
-=== Interface ===
+## Interface 
 ```shell
 # Gigabitethernet 1000M
 interface Gigabitethernet 1/0/1
@@ -90,7 +90,7 @@ speed 1000
 duplex full
 ```
 
-=== Trunk ===
+## Trunk 
 ```shell
 # ten-gigabitethernet 10000M
 interface ten-gigabitethernet 1/0/48
@@ -99,7 +99,7 @@ port link-type trunk
 port trunk permit vlan all
 ```
 
-=== Etherchanel ===
+## Etherchanel 
 ```shell
 interface bridge-aggregation 1
 quit
@@ -113,7 +113,7 @@ show link-aggregation summary
 show link-aggregation verbose
 ```
 
-=== LLDP ===
+## LLDP 
 ```shell
 sytem-view
 lldp enable
@@ -121,7 +121,7 @@ display lldp neighbor-information
 display lldp neighbor-information interface Ten-GigabitEthernet 1/0/48
 ```
 
-=== Display ===
+## Display 
 ```shell
 display current-configuration
 display current-configuration interface
@@ -133,7 +133,7 @@ display version
 diaply vlan
 ```
 
-=== Save and backup configuration ===
+## Save and backup configuration 
 ```shell
 # Save configuration
 save
@@ -146,7 +146,7 @@ restore startup-configuration from 10.10.10.10 start-configuration-backup.cfg
 <BJ-1F-SW01>reset saved-configuration
 ```
 
-=== IRF Stack ===
+## IRF Stack 
 ```shell
 # On switch01
 irf domain 20
