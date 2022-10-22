@@ -22,14 +22,13 @@ show ip route summary
 ```
 
 ## Administrative Distance
-<div class="code-example" markdown="1">
-| Routing Protocol        | AD          |
-|:-------------|:------------------|
-| Directly connected interface           | 0 |
-| Static route | 1   |
-| OSPF           | 110      |
-| RIP           | 120 |
-</div>
+ ```js
+Routing Protocol                    Administrative Distance
+Directly connected interface        0
+Static route                        1
+OSPF                                110
+RIP                                 120
+ ```
 
 ## Static Route
  ```js
