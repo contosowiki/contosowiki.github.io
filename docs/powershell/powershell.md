@@ -8,7 +8,7 @@ permalink: /docs/powershell
 
 # PowerShell
 
-## Windows general commands
+## General commands
 
 System
 ```powershell
@@ -67,7 +67,7 @@ net stop netlogon
 net start netlogon
 ```
 
-## Windows general tools
+## General tools
 
 ```powershell
 Remote Desktop Connection Manager
