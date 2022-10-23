@@ -33,7 +33,7 @@ Using Jekyll, you can blog using beautiful Markdown syntax, and without having t
 ## Jekyll Themes
 
 ```css
-`Just the Docs`
+Just the Docs
 docsy-jekyll
 Edition
 Jekyll Doc Theme 6.0
@@ -41,7 +41,7 @@ jekyll-rtd-theme
 dash
 ```
 
-This site use "`Just the Docs`" theme.
+This site use `Just the Docs` theme.
 
 _config.yml
 ```css
