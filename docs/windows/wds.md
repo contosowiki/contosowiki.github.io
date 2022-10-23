@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Windows Deployment Service
+title: WDS
 parent: Windows
 nav_order: 5
 ---

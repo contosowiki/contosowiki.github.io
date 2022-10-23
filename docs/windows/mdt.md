@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Microsoft Deployment Toolkit
+title: MDT
 parent: Windows
 nav_order: 6
 ---
