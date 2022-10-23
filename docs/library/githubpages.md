@@ -43,7 +43,7 @@ dash
 
 This site use `Just the Docs` theme.
 
-GitHub\contosowiki.github.io\_config.yml
+_config.yml
 ```css
 title: Contoso Wiki
 description: An open project
@@ -63,7 +63,7 @@ back_to_top_text: "Back to top"
 footer_content: "Copyright &copy; 2022 Wuwei."
 ```
 
-GitHub\contosowiki.github.io\_sass\color_schemes\contoso.scss
+_sass\color_schemes\contoso.scss
 ```css
 $link-color: $blue-000;
 ```
