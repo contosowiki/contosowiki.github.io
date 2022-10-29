@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Cisco Wireless
-parent: Network
+parent: Archive
 nav_order: 3
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Cisco Firewall
-parent: Network
+parent: Archive
 nav_order: 4
 ---
 

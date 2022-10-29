@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Cisco VPN
-parent: Network
+parent: Archive
 nav_order: 5
 ---
 

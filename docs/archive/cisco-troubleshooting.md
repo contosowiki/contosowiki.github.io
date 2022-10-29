@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Cisco Troubleshooting
-parent: Network
+parent: Archive
 nav_order: 7
 ---
 
