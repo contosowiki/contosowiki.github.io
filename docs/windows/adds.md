@@ -104,7 +104,7 @@ w32tm /config /computer:BJDC01.contoso.wiki /manualpeerlist:time.windows.com /sy
 
 ### FSMO Role Holders
 
-Schema master / Forest level"： To make change Schema in forest (such as implement Exchange, Lync, SCCM)
+Schema master / Forest level： To make change Schema in forest (such as implement Exchange, Lync, SCCM)
 
 Domain naming master / Forest level: To add/remove domain in forest
 
