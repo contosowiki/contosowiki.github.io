@@ -2,6 +2,7 @@
 layout: default
 title: Cisco Router
 parent: Archive
+grand_parent: Library
 nav_order: 2
 ---
 
