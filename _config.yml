@@ -14,3 +14,8 @@ back_to_top: true
 back_to_top_text: "Back to top"
 
 footer_content: "Copyright &copy; 2022 Wuwei."
+
+# Google Analytics Tracking (optional)
+# e.g, UA-1234567-89
+ga_tracking: G-0DXTH3QCBK
+ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true by default)
