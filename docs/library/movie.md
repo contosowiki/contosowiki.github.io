@@ -16,8 +16,7 @@ nav_order: 502
 
 ---
 
-## The Shawshank Redemption 
+## 1994 
 
-1994 The Shawshank Redemption
-
+The Shawshank Redemption
 肖申克的救赎
