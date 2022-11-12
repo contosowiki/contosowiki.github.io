@@ -18,6 +18,8 @@ nav_order: 502
 
 ## The Shawshank Redemption
 
-1994 The Shawshank Redemption
+Year: 1994
 
-肖申克的救赎
+Country: United States
+
+Movie: The Shawshank Redemption 《肖申克的救赎》
