@@ -7,7 +7,7 @@ nav_order: 501
 
 # The boy and the Tree
 
-```css
+```shell
 A long time ago,
 there was a huge tree.
 A little boy loved to come and play around it every day.
