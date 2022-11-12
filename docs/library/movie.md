@@ -1,6 +1,6 @@
 ---
 layout: default
-title: MediaWiki
+title: Movie Favorites
 parent: Library
 nav_order: 502
 ---
