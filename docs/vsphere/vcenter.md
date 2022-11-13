@@ -1,11 +1,11 @@
 ---
 layout: default
-title: vCenter
+title: vCenter Installation
 parent: vSphere
 nav_order: 3
 ---
 
-# vCenter
+# vCenter Installation
 {: .no_toc }
 
 ## Table of contents

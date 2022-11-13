@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Virtual Machine
+title: vCenter Management
 parent: vSphere
-nav_order: 2
+nav_order: 4
 ---
 
-# Virtual Machine
+# vCenter Management
 {: .no_toc }
 
 ## Table of contents

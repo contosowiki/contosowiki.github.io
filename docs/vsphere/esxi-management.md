@@ -1,11 +1,11 @@
 ---
 layout: default
-title: ESXi Installation
+title: ESXi Management
 parent: vSphere
-nav_order: 1
+nav_order: 2
 ---
 
-# ESXi Installation
+# ESXi Management
 {: .no_toc }
 
 ## Table of contents
