@@ -16,4 +16,12 @@ nav_order: 3
 
 ---
 
+{: .warning-title }
+> DNS Record
+>
+> Make sure A and ptr records are there.
+
 ## Install
+```shell
+
+```
