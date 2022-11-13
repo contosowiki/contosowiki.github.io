@@ -20,7 +20,7 @@ IP Addresses reserved for use on private networks:
 
 ## Choosing private IPv4 address
 
-- We need to reserve enough IP address for all devices (Desktop, Laptop, Mobile, etc), Class A may be good choose. 
+- Reserve enough IP addresses for all devices (Desktop, Laptop, Mobile, etc), Class A may be good choose. 
 
 - Pay attention to potential IP confiction in your environment (Docker may use IP address of Class B, etc).
 
