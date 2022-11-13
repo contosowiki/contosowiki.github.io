@@ -24,6 +24,14 @@ Country: United States
 
 Movie: The Shawshank Redemption 《肖申克的救赎》
 
+## The Days Without My Comrade
+
+Year: 1996
+
+Country: China
+
+Movie: The Days Without My Comrade 《离开雷锋的日子》
+
 ## Fatal Decision
 
 Year: 2000
