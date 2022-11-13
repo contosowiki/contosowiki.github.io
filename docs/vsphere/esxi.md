@@ -126,6 +126,6 @@ port link-type trunk
 port trunk permit vlan 10 20 30
 ```
 
-Above configuration, there is no EthernetChannel or link-aggregation configuration.
+Above configuration, there is no EthernetChannel or link-aggregation.
 
 This is a basic working way, though there are more configurations with high efficiency algorithm.
