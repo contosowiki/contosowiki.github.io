@@ -93,7 +93,7 @@ Use two or more network NICs for fault-tolerance and load-balancing.
 First port configuration on swith side (Cisco Switch)
 ```js
 interface Ethernet1/1
-  description To BJ ESXi Host 01
+  description To BJ ESXi Host 01 NIC01
   switchport
   switchport mode trunk
   switchport trunk allowed vlan 10,20,30
@@ -102,8 +102,8 @@ interface Ethernet1/1
 
 Second port configuration on swith side (Cisco Switch)
 ```js
-interface Ethernet1/1
-  description To BJ ESXi Host 01
+interface Ethernet1/2
+  description To BJ ESXi Host 01 NIC02
   switchport
   switchport mode trunk
   switchport trunk allowed vlan 10,20,30
@@ -113,17 +113,19 @@ interface Ethernet1/1
 First port configuration on swith side (H3C Switch)
 ```css
 interface ten-gigabitethernet 1/0/1
-description To BJ ESXi Host 01
+description To BJ ESXi Host 01 NIC01
 port link-type trunk
 port trunk permit vlan 10 20 30
 ```
 
 Second port configuration on swith side (H3C Switch)
 ```css
-interface ten-gigabitethernet 1/0/1
-description To BJ ESXi Host 01
+interface ten-gigabitethernet 1/0/2
+description To BJ ESXi Host 01 NIC02
 port link-type trunk
 port trunk permit vlan 10 20 30
 ```
 
-Above configuration, we do not do EthernetChannel or link-aggregation, this is a basic working way.
+Above configuration, there is no EthernetChannel or link-aggregation configuration.
+
+This is a basic working way, though there are more configurations with high efficiency algorithm.
