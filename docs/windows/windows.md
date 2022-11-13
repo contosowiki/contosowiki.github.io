@@ -8,5 +8,6 @@ permalink: /docs/windows
 
 # Windows
 
-To make it as easy as possible to write documentation in plain Markdown, most UI components are styled using default Markdown elements with few additional CSS classes needed.
-{: .fs-6 .fw-300 }
+Windows Server 2022 introduces advanced multi-layer security, hybrid capabilities with Azure, and a flexible application platform. 
+
+https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2022
