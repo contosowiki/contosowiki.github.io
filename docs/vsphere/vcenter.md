@@ -97,4 +97,5 @@ Address:  192.168.10.10
 15. "Ready to complete" window, review the settings and click "Finish"
 16. "Warning" window, click "OK" to start
 17. "Install - Stage 2: Complete" window indicates "You have successfully setup this vCenter Server."
+# vCenter Server Getting Started Page : https://vcenter.contoso.wiki:443
 ```
