@@ -16,116 +16,52 @@ nav_order: 2
 
 ---
 
-## Install
+Access ESXi from https://x.x.x.x
 
+## License
 ```shell
-1. "Welcome to the VMware ESXi 8.0.0 Installation" window, press "Enter" to continue
-2. "End User License Agreement (EULA)" window, press "F11" to accept and continue
-3. "Select a Disk to Install or Upgrade" window, keep default and press "Enter" to continue
-4. "Please select a keyboard layout" window, keep default (US Default) and press "Enter" to continue
-5. "Enter a root password" window, input root password twice and press "Enter" to continue
-6. "Confirm Install" window, press "F11" to install
-7. "Installation Compete" window, press "Enter" to reboot
+Host -> Manage -> Licensing -> Assign license -> Check License -> Assign License
 ```
 
-## Configure IP address
+## Time
 ```shell
-1. Press "F2" to customize system
-2. "Authentication Required" windows, input password, press "Enter"
-3. Select "Configure Management Network", press "Enter"
-4. Select "IPv4 Configuration", press "Enter"
-5. Check option "Set static IPv4 address and network configuration:"
-6. Fill "IPv4 Address", "Subnet Mask" and "Default Gateway" and press "Enter"
+# Time is key important for all systems
+
+# Enable and start ntpd service
+Host -> Manage -> Services -> ntpd -> Start
+Host -> Manage -> Services -> ntpd -> Actions -> Policy -> Start and stop with host
+
+# Setup NTP
+Host -> Manage -> System -> Time & Date -> Edit NTP Setttings -> Use Network Time Protocol (enable NTP client) -> NTP Servers -> Save
+
 ```
 
-## Configure DNS
+## Storage
 ```shell
-1. Press "F2" to customize system
-2. "Authentication Required" windows, input password, press "Enter"
-3. Select "Configure Management Network", press "Enter"
-4. Select "DNS Configuration", press "Enter"
-5. Check option "Use the following DNS server addresses and hostname:"
-6. Fill "Primary DNS Server", "Alternate DNS Server" and "Hostname" and press "Enter"
+# Add NFS datastore
+Storage -> New datastore -> Mount NFS datastore -> Name / NFS server / NFS share / NFS version -> Next -> Finish
+
+# NFS mount details
+Name: My nfs
+NFS Server: x.x.x.x
+NFS Share: /nfs
+NFS Version: NFS 3
 ```
 
-## Network VLAN
-
-A VLAN is a virtual network within a physical network.
-
+## Networking
 ```shell
-1. Press "F2" to customize system
-2. "Authentication Required" windows, input password, press "Enter"
-3. Select "Configure Management Network", press "Enter"
-4. Select "VLAN (optional)", press "Enter"
-5. Fill "VLAN ID" and press "Enter"
+# There is default virtual switch named by "VSwitch0"
+# There is default port group (management) named by "Management Network" (Function: Management, vMotion, Provisioning, Fault tolerance logging, etc)
+# There is default port group (Virtual Machine) named by "VM Network"
+
+# Add new port group as needed
+Networking -> Add port group -> Name / VLAN ID / Virtual switch -> ADD
 ```
 
-Port configuration on swith side (Cisco Switch)
-```js
-interface Ethernet1/1
-  description To BJ ESXi Host 01
-  switchport
-  switchport mode trunk
-  switchport trunk allowed vlan 10,20,30
-  no shutdown
-```
-
-Port configuration on swith side (H3C Switch)
-```css
-interface ten-gigabitethernet 1/0/1
-description To BJ ESXi Host 01
-port link-type trunk
-port trunk permit vlan 10 20 30
-```
-
-## Network fault-tolerance and load-balancing
-
-Use two or more network NICs for fault-tolerance and load-balancing.
-
+## Virtual Machines
 ```shell
-1. Press "F2" to customize system
-2. "Authentication Required" windows, input password, press "Enter"
-3. Select "Configure Management Network", press "Enter"
-4. Select "Network Adapters", press "Enter"
-5. By default one adapter is checked, we could add the second or more adapters, and press "Enter"
+# Create new virtual machine from scratch
+Virtual Machines -> Create / Register VM -> Create new virtual machine -> Name / Compatibility / Guest OS family / Guest OS version -> Next -> Select storage -> Next -> Hardware customize settings -> Next -> Finish
+
+# We could also "Deploy a virtual machine from an OVF or OVA file" or "Register an existing virtual machine"
 ```
-
-First port configuration on swith side (Cisco Switch)
-```js
-interface Ethernet1/1
-  description To BJ ESXi Host 01 NIC01
-  switchport
-  switchport mode trunk
-  switchport trunk allowed vlan 10,20,30
-  no shutdown
-```
-
-Second port configuration on swith side (Cisco Switch)
-```js
-interface Ethernet1/2
-  description To BJ ESXi Host 01 NIC02
-  switchport
-  switchport mode trunk
-  switchport trunk allowed vlan 10,20,30
-  no shutdown
-```
-
-First port configuration on swith side (H3C Switch)
-```css
-interface ten-gigabitethernet 1/0/1
-description To BJ ESXi Host 01 NIC01
-port link-type trunk
-port trunk permit vlan 10 20 30
-```
-
-Second port configuration on swith side (H3C Switch)
-```css
-interface ten-gigabitethernet 1/0/2
-description To BJ ESXi Host 01 NIC02
-port link-type trunk
-port trunk permit vlan 10 20 30
-```
-
-Above configuration, there is no EthernetChannel or link-aggregation.
-
-This is a basic working way, though there are more configurations with high efficiency algorithm.
