@@ -69,6 +69,6 @@ Movie: Papillon 《巴比龙》
 
 Year: 2019
 
-Country: United States
+Country: United Kingdom
 
 Movie: The Boy Who Harnessed the Wind 《驭风男孩》
