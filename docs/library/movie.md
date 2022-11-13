@@ -30,7 +30,7 @@ Year: 2000
 
 Country: China
 
-Movie: Fatal Decision 《暖春》
+Movie: Fatal Decision 《生死抉择》
 
 
 ## Nuan Chun
@@ -39,7 +39,7 @@ Year: 2003
 
 Country: China
 
-Movie: Nuan Chun 《生死抉择》
+Movie: Nuan Chun 《暖春》
 
 ## The Pursuit of Happyness
 
