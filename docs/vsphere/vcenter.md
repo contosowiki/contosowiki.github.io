@@ -16,7 +16,7 @@ nav_order: 3
 
 ---
 
-{: .highlight }
+## Prerequirement
 Make sure both A and ptr records are in DNS server.
 
 ## Install
