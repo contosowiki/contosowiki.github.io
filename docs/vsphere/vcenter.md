@@ -16,10 +16,8 @@ nav_order: 3
 
 ---
 
-{: .warning-title }
-> DNS Record
->
-> Make sure A and ptr records are there.
+{: .highlight }
+Make sure both A and ptr records are in DNS server.
 
 ## Install
 ```shell
